@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register Form</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        thead th{
+        background-color: #d8d6ff;
+        font-weight: bold;
+        text-align: center;
+        }
+
+        button{
+            background: #e8e6f0;
+            border: 1.5px solid #0d0d0e;
+            padding: 8px 28px;
+        }
+    </style>
+    <form>
+        <table border="1" width="1000px">
+            <tr>
+                <thead>
+                    <tr style="background-color: rgb(126, 121, 237)">
+                    <th width="500px">Name</th>
+                    <th width="500px">Value</th>
+                    </tr>
+                </thead>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input size="70px" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td>
+                    <input type="radio" name="sex" value="male" /> Male <br>
+                    <input type="radio" name="sex" value="female" checked /> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Eye color</td>
+                <td>
+                    <select name="eye_color">
+                        <option>Green</option>
+                        <option>Blue</option>
+                        <option>Brawn</option>
+                        <option>Yellow</option>
+                        <option selected>None</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Check all that apply</td>
+                <td>
+                    <div>
+                        <label>
+                        <input type="checkbox" name="tall"> Over 6 feet tall
+                        </label>
+                        <br>
+                        <label>
+                        <input type="checkbox" name="heavy"> Over 200 pounds
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Describe your athletic ability:</label>
+                    <br>
+                    <label colspan="2">
+                    <textarea name="Address" style="width: 99%; height:120px;"></textarea>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                            <center>
+                                <input  size="135px" type="submit" value="Enter my Information" >
+                            </center>
+                        </td>
+            </tr>
+        </table>
+    </form>
+</body>
